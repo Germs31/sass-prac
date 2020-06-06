@@ -1,5 +1,7 @@
 $light-color: #f4f4f4;
 $font-stack: Arial, Helvetica, sans-serif;
+$primary-color: #0e6cff;
+$secondary-color: #ff8700;
 
 * {
     box-sizing: border-box;
@@ -12,4 +14,48 @@ body {
     font-family: $font-stack;
     line-height: 1.6;
 }
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.showcase {
+    background: $primary-color;
+    color: #fff;
+    height: 600px;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding: 15px;
+        }
+
+        a:hover{
+            color: $secondary-color;
+        }
+    }
+    a {
+        color: #fff;
+    }
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+
 
